@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+div.newItems{
+width: auto ;
+height:auto;
+min-width: 100%;
+min-height:40%;
+}
+div.content{
+width: auto ;
+height:auto;
+min-width: 100%;
+min-height:100%%;
+margin:0em;
+padding: 0em;
+}
+div.inf{
+width: auto ;
+height:auto;
+min-width: 100%;
+min-height:59%%;	
+margin:0em;
+padding: 0em;	
+}

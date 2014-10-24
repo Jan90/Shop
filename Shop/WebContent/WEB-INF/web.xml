@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Getting Started with AJAX using JAVA</display-name>
+  <welcome-file-list>
+    <welcome-file>listOfProducts.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>PopulateDropDownList</servlet-name>
+    <servlet-class>com.servlet.PopulateDropDownList</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>ProdListByTypeAndGenre</servlet-name>
+    <servlet-class>com.servlet.ProdListByTypeAndGenre</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>AddToShoppingCart</servlet-name>
+    <servlet-class>com.servlet.AddToShoppingCart</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewItems</servlet-name>
+    <servlet-class>com.servlet.NewItems</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PopulateDropDownList</servlet-name>
+    <url-pattern>/fillDropDown.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProdListByTypeAndGenre</servlet-name>
+    <url-pattern>/getData.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddToShoppingCart</servlet-name>
+    <url-pattern>/AddToShoppingCart.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewItems</servlet-name>
+    <url-pattern>/NewItems.do</url-pattern>
+  </servlet-mapping>
+</web-app>
