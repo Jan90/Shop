@@ -91,7 +91,6 @@ function addToShoppingCart(){
 xmlhttp.open("GET","http://localhost:8181/CDShop/AddToShoppingCart.do?itemsArray="+itemsArray,true);
 xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 xmlhttp.send(null);
-alert("Данная позиция была успешно добавлена в Вашу корзину");
 	}
 function getGenres(value) {
 	var xmlhttp;
